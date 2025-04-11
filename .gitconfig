@@ -1,0 +1,23 @@
+[alias]
+    st = status
+    s = status -sb
+    co = checkout
+    br = branch
+    ci = commit
+    cm = commit -m
+    hist = log --oneline --graph --decorate --all
+    last = log -1 HEAD
+    amend = commit --amend --no-edit
+    undo = reset HEAD~    
+
+[init]
+    defaultBranch = main
+[color]
+    status = auto
+    diff = auto
+    branch = auto
+    interactive = auto
+    grep = auto
+    ui = auto
+[push]
+    default = simple
