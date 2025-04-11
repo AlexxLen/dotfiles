@@ -1,0 +1,62 @@
+[general]
+# iterm, vscode, snazzy, one_dark, tokyo_night_storm, oceanic_next 
+import = [
+    #"~/.config/alacritty/themes/themes/{theme}.toml"
+    "C:\\Users\\AlexxLen\\AppData\\Roaming\\alacritty\\themes\\themes\\snazzy.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+COLORTERM = "truecolor"
+LANG = "en_US.UTF-8"
+
+[window]
+decorations = "None"
+startup_mode = "Maximized"
+opacity = 0.94
+blur = true
+padding.x = 15
+padding.y = 15
+dynamic_padding = true
+
+[font]
+size = 12
+normal.family = "JetBrainsMono Nerd Font"
+
+[terminal.shell]
+program = "wsl"
+args = [
+    "-d",
+    "Ubuntu-24.04",
+    "--cd",
+    "~"
+]
+
+# Новое окно терминала
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Control"
+
+# Удалить до начала строки
+[[keyboard.bindings]]
+chars = "\u0015"
+key = "Back"
+mods = "Control"
+
+# Переместиться назад на слово
+[[keyboard.bindings]]
+chars = "\u001Bb"
+key = "Left"
+mods = "Alt"
+
+# Переместиться вперед на слово
+[[keyboard.bindings]]
+chars = "\u001Bf"
+key = "Right"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0000"
+key = "Space"
+mods = "Control"
