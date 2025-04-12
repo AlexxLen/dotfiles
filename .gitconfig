@@ -12,6 +12,7 @@
 
 [init]
     defaultBranch = main
+
 [color]
     status = auto
     diff = auto
@@ -19,5 +20,6 @@
     interactive = auto
     grep = auto
     ui = auto
+
 [push]
     default = simple
